@@ -12,6 +12,13 @@ import java.io.PrintWriter;
 
 /**
  * Servlet implementation class FirstServlet
+Servlet Life Cycle
+A servlet goes through the following life cycle stages:
+
+Loading and Instantiation – The servlet class is loaded into memory.
+Initialization (init()) – Called once when the servlet is created.
+Request Handling (service()) – Called for every request to process HTTP requests (doGet(), doPost(), etc.).
+Destruction (destroy()) – Called before removing the servlet from memory.
  */
 @WebServlet("/FirstServlet")
 public class FirstServlet extends HttpServlet {
