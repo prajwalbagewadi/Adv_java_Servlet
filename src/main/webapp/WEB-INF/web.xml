@@ -8,5 +8,20 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>  
+  </welcome-file-list>
+  <web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="3.0">
+    
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>pack.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/FirstServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
 </web-app>
